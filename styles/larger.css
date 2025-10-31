@@ -2,14 +2,6 @@
    Larger Screen Layout (Media Query)
    ========================================= */
 
-   /* Example usage in your CSS */
-body {
-  font-family: 'DM Sans', sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
-}
 
 @media (min-width: 768px) {
 
