@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kasagga Frank">
+  <meta name="description"
+    content="Anka Chamber of Commerce home page for WDD 231 showcasing responsive design and web development projects.">
+  <title>anka commerce</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript Files -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+  <script src="main.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logochember.svg" alt="Site Logo" class="logo">
+      <span class="sitename">ANKA CHAMBER OF COMMERCE</span>
+      <button id="menu" aria-label="Navigation Menu">☰</button>
+    </div>
+
+    <nav class="navigation">
+      <ul id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber/">Chamber</a></li>
+        <li><a href="final/">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <img src="images/herobusiness.webp" alt="Anka Chamber of Commerce" class="hero-image">
+        <h1>Welcome to Anka Chamber of Commerce</h1>
+        <p>Driving business growth and community development</p>
+      </div>
+    </section>
+
+    <h1>Home</h1>
+
+    <section>
+      <h2>About Me</h2>
+      <p>Hello! My name is Kasagga Frank and I am from Kampala, Uganda. I like listening to band music and adventure.
+        I am studying Web Design and Development at BYU IDAHO. I am looking forward to creating my own website and creating more for other organisations. I am
+        so happy to be part of Web Design and Development team.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p>This site will host all my project links, including the Chamber of Commerce website (Week 2) and the Final
+        Project (Week 6).</p>
+    </section>
+
+    <section>
+      <h2>Goals</h2>
+      <p>My goal for this course is to strengthen my front-end skills, create professional web projects, and develop a
+        portfolio that demonstrates industry-ready experience.</p>
+    </section>
+
+    <!-- ✳️ Courses Section Added Below -->
+    <section id="courses-section">
+      <h2>Web & Computer Programming Certificate Courses</h2>
+
+      <!-- Filter Buttons -->
+      <div class="course-buttons">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+
+      <!-- Dynamic Course Cards Container -->
+      <div id="courses" class="course-container"></div>
+
+      <!-- Dynamic Total Credits Display -->
+      <p id="totalCredits"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/yourgithubusername" target="_blank" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub Icon">
+      </a>
+      <a href="www.linkedin.com/in/kasagga-frank-692977355" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin-icon.svg" alt="LinkedIn Icon">
+      </a>
+      <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+        <img src="images/twitter-icon-8.png" alt="Twitter Icon">
+      </a>
+    </div>
+
+    <p>&copy; <span id="currentyear"></span> Kasagga Frank | Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
