@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Summit Tech Solutions",
+      "address": "123 Innovation Way, Seattle, WA",
+      "phone": "206-555-1234",
+      "website": "https://www.summittech.com",
+      "image": "summittech.png",
+      "membership": 3,
+      "description": "Technology consulting and cloud infrastructure services."
+    },
+    {
+      "name": "Green Valley Farms",
+      "address": "478 Orchard Lane, Boise, ID",
+      "phone": "208-555-9876",
+      "website": "https://www.greenvalleyfarms.com",
+      "image": "greenvalley.png",
+      "membership": 1,
+      "description": "Organic produce and sustainable agriculture."
+    },
+    {
+      "name": "Coastal Coffee Roasters",
+      "address": "33 Bay Street, Monterey, CA",
+      "phone": "831-555-4455",
+      "website": "https://www.coastalcoffee.com",
+      "image": "coastalcoffee.png",
+      "membership": 2,
+      "description": "Artisan coffee roasting and café chain."
+    },
+    {
+      "name": "BrightWave Marketing",
+      "address": "900 Market Avenue, Austin, TX",
+      "phone": "512-555-7733",
+      "website": "https://www.brightwavemarketing.com",
+      "image": "brightwave.png",
+      "membership": 3,
+      "description": "Full-service digital marketing and branding agency."
+    },
+    {
+      "name": "Ironclad Construction",
+      "address": "705 Builder Blvd, Denver, CO",
+      "phone": "303-555-1111",
+      "website": "https://www.ironcladbuilds.com",
+      "image": "ironclad.png",
+      "membership": 2,
+      "description": "Commercial and residential construction services."
+    },
+    {
+      "name": "Mountain View Realty",
+      "address": "21 Summit Dr, Salt Lake City, UT",
+      "phone": "801-555-2468",
+      "website": "https://www.mountainviewrealty.com",
+      "image": "mountainview.png",
+      "membership": 1,
+      "description": "Residential and commercial property management."
+    },
+    {
+      "name": "Blue Horizon Travel",
+      "address": "640 Ocean Blvd, Miami, FL",
+      "phone": "305-555-9988",
+      "website": "https://www.bluehorizontravel.com",
+      "image": "bluehorizon.png",
+      "membership": 3,
+      "description": "Luxury travel and tour company specializing in cruises."
+    }
+  ]
+}
