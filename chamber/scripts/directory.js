@@ -40,7 +40,7 @@ let allMembers = [];
 async function fetchAndDisplayMembers() {
     try {
         if (allMembers.length === 0) {
-            const response = await fetch('../chamber/members.json');
+            const response = await fetch('../chamber/data/members.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -77,7 +77,7 @@ function createCardItem(member) {
     const membershipText = getMembershipText(member.membership);
 
     card.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name} logo" class="member-logo">
+        <img src="../images/${member.image}" alt="${member.name} logo" class="member-logo">
         <h3 class="member-name">${member.name}</h3>
         <p class="member-address">${member.address}</p>
         <p class="member-phone">${member.phone}</p>
@@ -96,7 +96,7 @@ function createListItem(member) {
     const membershipText = getMembershipText(member.membership);
 
     listItem.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name} logo" class="list-logo">
+        <img src="../images/${member.image}" alt="${member.name} logo" class="list-logo">
         <div class="list-details">
             <h3 class="list-name">${member.name}</h3>
             <p class="list-address">${member.address}</p>
