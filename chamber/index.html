@@ -6,11 +6,12 @@
     <title>ANKA Chamber of Commerce</title>
     <meta name="description" content="Anka Chamber of Commerce - Connecting businesses, fostering growth, and strengthening our community.">
     <meta name="author" content="Kasagga Frank">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/normalize.css"> 
 
-     <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Chamber of Commerce Business Directory">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://kasagga39.github.io/wdd231/chamber/images/social-preview.png">
@@ -19,11 +20,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Share+Tech&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Share+Tech&display=swap" rel="stylesheet">
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -51,7 +49,6 @@
 
         <nav>
             <div class="page-container nav-container">
-                <!-- Hamburger Menu -->
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -65,7 +62,6 @@
             </div>
         </nav>
 
-        <!-- Overlay for mobile menu -->
         <div class="overlay"></div>
     </header>
 
@@ -121,7 +117,9 @@
                         <i class="fas fa-spinner fa-spin"></i>
                         <p>Loading weather data...</p>
                     </div>
-                    <div id="current-weather" style="display: none;">
+
+                    <!-- Removed inline style -->
+                    <div id="current-weather" class="hidden">
                         <div class="weather-header">
                             <i class="fas fa-sun weather-icon" id="weather-icon"></i>
                             <div class="weather-temp" id="current-temp">--°F</div>
@@ -135,13 +133,16 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="forecast">
                     <h3 class="forecast-title">3-Day Forecast</h3>
                     <div class="loading" id="forecast-loading">
                         <i class="fas fa-spinner fa-spin"></i>
                         <p>Loading forecast...</p>
                     </div>
-                    <div class="forecast-grid" id="forecast-grid" style="display: none;"></div>
+
+                    <!-- Removed inline style -->
+                    <div class="forecast-grid hidden" id="forecast-grid"></div>
                 </div>
             </div>
         </section>
@@ -153,7 +154,9 @@
                 <i class="fas fa-spinner fa-spin"></i>
                 <p>Loading business spotlights...</p>
             </div>
-            <div class="spotlights-grid" id="spotlights-grid" style="display: none;"></div>
+
+        
+            <div class="spotlights-grid hidden" id="spotlights-grid"></div>
         </section>
     </main>
 
@@ -165,6 +168,7 @@
                     <img src="images/logochember.png" alt="Chamber Logo">
                     <p>Connecting Businesses, Building Community</p>
                 </div>
+
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
@@ -176,6 +180,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
                     <p><i class="fas fa-map-marker-alt"></i> 123 Commerce Street, Namanve</p>

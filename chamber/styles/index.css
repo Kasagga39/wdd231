@@ -679,3 +679,8 @@ footer {
     color: var(--primary);
 }
 
+/* Hide elements initially */
+.hidden {
+    display: none;
+}
+

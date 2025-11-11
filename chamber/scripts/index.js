@@ -402,3 +402,6 @@ document.addEventListener("DOMContentLoaded", function() {
         overlay.classList.remove("active");
     });
 });
+document.getElementById("current-weather").classList.remove("hidden");
+document.getElementById("forecast-grid").classList.remove("hidden");
+document.getElementById("spotlights-grid").classList.remove("hidden");
