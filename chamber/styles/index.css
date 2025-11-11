@@ -195,10 +195,7 @@ nav {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Fix for Font Awesome rotation error */
-.fa-rotate-by {
-    transform: rotate(var(--fa-rotate-angle, 0deg));
-}
+
 
 /* ===============================
    Banner (Hero Section)
