@@ -382,3 +382,23 @@ window.addEventListener('resize', () => {
         document.body.style.overflow = '';
     }
 });
+
+// ======= Mobile Navigation Toggle =======
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu-links");
+    const overlay = document.querySelector(".overlay");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menu.classList.toggle("active");
+        overlay.classList.toggle("active");
+    });
+
+    // Close menu when overlay is clicked
+    overlay.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        menu.classList.remove("active");
+        overlay.classList.remove("active");
+    });
+});

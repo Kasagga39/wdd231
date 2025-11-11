@@ -27,6 +27,9 @@
     <title>Business Directory - Chamber of Commerce</title>
 </head>
 <body>
+    <!-- Navigation Overlay (will be created by JavaScript if not present) -->
+    <div class="nav-overlay"></div>
+    
     <header>
         <div class="header-container">
             <a href="index.html" class="logo-link">
@@ -36,15 +39,19 @@
                     <p>Connecting Business & Community</p>
                 </div>
             </a>
-            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
         
         <nav id="primary-nav">
-           <ul id="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="directory.html">Chamber</a></li>
-            <li><a href="final/">Final</a></li>
-      </ul>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Chamber</a></li>
+                <li><a href="final/">Final</a></li>
+            </ul>
         </nav>
     </header>
 
