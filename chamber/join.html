@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Application</title>
+   <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Membership Application</h1>
+            <p class="subtitle">Join our community and unlock exclusive benefits</p>
+        </div>
+    </header>
+    
+    <div class="container content-wrapper">
+        <section class="form-section">
+            <div class="form-container">
+                <h2>Application Form</h2>
+                <form method="get" action="thankyou.html">
+                    <label>
+                        <span class="required">First Name</span>
+                        <input type="text" name="first-name" required title="Please enter your first name" autocomplete="given-name">
+                    </label>
+                    
+                    <label>
+                        <span class="required">Last Name</span>
+                        <input type="text" name="last-name" required title="Please enter your last name" autocomplete="family-name">
+                    </label>
+                    
+                    <label>
+                        <span>Organizational Title</span>
+                        <input type="text" name="org-title" title="Please enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+                    
+                    <label>
+                        <span class="required">Email Address</span>
+                        <input type="email" name="email" required title="Please enter a valid email address" autocomplete="email" placeholder="example@domain.com">
+                    </label>
+                    
+                    <label>
+                        <span class="required">Mobile Phone</span>
+                        <input type="tel" name="phone" required title="Please enter your mobile phone number" autocomplete="tel">
+                    </label>
+                    
+                    <label>
+                        <span class="required">Business/Organization Name</span>
+                        <input type="text" name="org-name" required title="Please enter your business or organization name" autocomplete="organization">
+                    </label>
+                    
+                    <label>
+                        <span class="required">Membership Level</span>
+                        <select name="membership-level" required title="Please select a membership level">
+                            <option value="">Select a membership level</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    
+                    <label>
+                        <span>Business/Organization Description</span>
+                        <textarea name="org-description" title="Please describe your business or organization" rows="4"></textarea>
+                    </label>
+                    
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    
+                    <button type="submit">Submit Application</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="cards-section">
+            <h2>Membership Levels</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations with no fee</p>
+                    <a href="#" class="card-link" data-modal="modal-np">Learn More</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <p>Entry-level benefits for growing organizations</p>
+                    <a href="#" class="card-link" data-modal="modal-bronze">Learn More</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits for established organizations</p>
+                    <a href="#" class="card-link" data-modal="modal-silver">Learn More</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits for industry leaders</p>
+                    <a href="#" class="card-link" data-modal="modal-gold">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Modal for NP Membership -->
+    <div id="modal-np" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>NP Membership Benefits</h2>
+            <p>Our NP Membership is designed specifically for non-profit organizations with no membership fee.</p>
+            <ul>
+                <li>Access to our online resource library</li>
+                <li>Listing in our non-profit directory</li>
+                <li>Quarterly newsletter with sector updates</li>
+                <li>Invitations to annual non-profit networking events</li>
+                <li>Access to grant opportunity database</li>
+                <li>Volunteer matching services</li>
+            </ul>
+            <p><strong>Cost: Free for qualifying non-profits</strong></p>
+        </div>
+    </div>
+    
+    <!-- Modal for Bronze Membership -->
+    <div id="modal-bronze" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Bronze Membership Benefits</h2>
+            <p>Our Bronze Membership offers essential benefits for growing organizations.</p>
+            <ul>
+                <li>All NP Membership benefits</li>
+                <li>10% discount on all training workshops</li>
+                <li>Access to member-only webinars</li>
+                <li>Business listing in our online directory</li>
+                <li>Monthly networking events</li>
+                <li>Access to industry reports</li>
+                <li>Member spotlight opportunity (quarterly drawing)</li>
+            </ul>
+            <p><strong>Cost: $250/year</strong></p>
+        </div>
+    </div>
+    
+    <!-- Modal for Silver Membership -->
+    <div id="modal-silver" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Silver Membership Benefits</h2>
+            <p>Our Silver Membership provides enhanced benefits for established organizations.</p>
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>20% discount on all training workshops</li>
+                <li>Priority registration for events</li>
+                <li>Featured business listing in our directory</li>
+                <li>Two complimentary event tickets per year</li>
+                <li>Access to premium industry research</li>
+                <li>Member spotlight opportunity (biannual)</li>
+                <li>Invitation to exclusive roundtable discussions</li>
+            </ul>
+            <p><strong>Cost: $500/year</strong></p>
+        </div>
+    </div>
+    
+    <!-- Modal for Gold Membership -->
+    <div id="modal-gold" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Gold Membership Benefits</h2>
+            <p>Our Gold Membership offers premium benefits for industry leaders.</p>
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>30% discount on all training workshops</li>
+                <li>VIP access to all events</li>
+                <li>Premium featured listing in our directory</li>
+                <li>Four complimentary event tickets per year</li>
+                <li>Access to exclusive market intelligence reports</li>
+                <li>Guaranteed member spotlight feature (annual)</li>
+                <li>Invitation to board advisory meetings</li>
+                <li>Complimentary advertising in our monthly newsletter</li>
+                <li>Dedicated account manager</li>
+            </ul>
+            <p><strong>Cost: $1,000/year</strong></p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Business Association. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
