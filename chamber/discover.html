@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Your Chamber of Commerce</title>
+    <meta name="description" content="Discover the attractions and features of our area that make it a great place to live, work, and visit.">
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/large.css">
+    <link rel="stylesheet" href="../chamber/styles/medium.css">
+    <link rel="stylesheet" href="../chamber/styles/discover.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.webp" alt="Chamber of Commerce Logo" width="100" height="100">
+                </a>
+                <div class="logo-text">
+                    <h1>Your City</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <nav>
+                <button id="hamburger-btn" aria-label="Toggle menu">☰</button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="discover-main">
+        <section class="visitor-info">
+            <div class="visitor-message">
+                <span id="close-message" aria-label="Close message">×</span>
+                <p id="visit-message"></p>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h1>Discover Our Community</h1>
+            <p>Explore the attractions and features that make our area a wonderful place to live, work, and visit. From historic landmarks to modern amenities, there's something for everyone.</p>
+        </section>
+
+        <section class="demographics">
+            <h2>Area Demographics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Population</h3>
+                    <p class="stat-number">85,247</p>
+                    <p class="stat-desc">Residents</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Median Age</h3>
+                    <p class="stat-number">38.2</p>
+                    <p class="stat-desc">Years</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Median Income</h3>
+                    <p class="stat-number">$72,450</p>
+                    <p class="stat-desc">Household</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Businesses</h3>
+                    <p class="stat-number">1,850+</p>
+                    <p class="stat-desc">Local Companies</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="attractions">
+            <h2>Local Attractions</h2>
+            <div class="attractions-grid" id="attractions-container">
+                <!-- Cards will be dynamically loaded from JSON -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- In the head section -->
+        <script src="scripts/discover.js" type="module" defer></script>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/logo.webp" alt="Chamber of Commerce Logo" width="60" height="60">
+                    <div>
+                        <h3>Your City Chamber of Commerce</h3>
+                        <p>123 Main Street, Your City, ST 12345</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <p>info@yourcitychamber.org</p>
+                    <p>(555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Your City Chamber of Commerce</p>
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

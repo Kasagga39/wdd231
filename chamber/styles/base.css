@@ -1,0 +1,327 @@
+/* CSS Variables */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #333333;
+    --accent-color: #ff9900;
+    --background-color: #f8f9fa;
+    --light-color: #ffffff;
+    --text-color: #333333;
+    --border-color: #dddddd;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --border-radius: 8px;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--light-color);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-text h1 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.logo-text p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Navigation */
+#hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#primary-nav {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+#primary-nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+#primary-nav a:hover,
+#primary-nav a.active {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* Main Content */
+.discover-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Visitor Message */
+.visitor-info {
+    margin-bottom: 2rem;
+}
+
+.visitor-message {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+#close-message {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h1 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--secondary-color);
+}
+
+/* Demographics */
+.demographics {
+    margin-bottom: 3rem;
+}
+
+.demographics h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-family: 'Merriweather', serif;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: var(--light-color);
+    padding: 2rem 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.stat-desc {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Attractions Grid - Mobile First */
+.attractions h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-family: 'Merriweather', serif;
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    gap: 1.5rem;
+}
+
+.attraction-card {
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.attraction-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.card-content address {
+    font-style: normal;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.card-content p {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.learn-more-btn {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.learn-more-btn:hover {
+    background-color: #e68a00;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo h3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Image Hover Effects (Desktop only) */
+@media (min-width: 641px) {
+    .attraction-card img {
+        filter: grayscale(20%);
+        transition: filter 0.3s ease, transform 0.3s ease;
+    }
+    
+    .attraction-card:hover img {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,72 @@
+/* Medium screens (641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .attractions-grid {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .header-container {
+        padding: 1rem 2rem;
+    }
+
+    .discover-main {
+        padding: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Assign grid areas to cards */
+    .attraction-card:nth-child(1) { grid-area: card1; }
+    .attraction-card:nth-child(2) { grid-area: card2; }
+    .attraction-card:nth-child(3) { grid-area: card3; }
+    .attraction-card:nth-child(4) { grid-area: card4; }
+    .attraction-card:nth-child(5) { grid-area: card5; }
+    .attraction-card:nth-child(6) { grid-area: card6; }
+    .attraction-card:nth-child(7) { grid-area: card7; }
+    .attraction-card:nth-child(8) { grid-area: card8; }
+}
+
+/* Show hamburger menu for medium and small screens */
+@media (max-width: 1024px) {
+    #hamburger-btn {
+        display: block;
+    }
+
+    #primary-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--light-color);
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: var(--shadow);
+        text-align: center;
+    }
+
+    #primary-nav.show {
+        display: flex;
+    }
+
+    #primary-nav li {
+        margin: 0.5rem 0;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}

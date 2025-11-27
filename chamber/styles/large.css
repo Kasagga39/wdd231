@@ -1,0 +1,64 @@
+/* Large screens (1025px and above) */
+@media (min-width: 1025px) {
+    .attractions-grid {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .header-container {
+        padding: 1rem 2rem;
+    }
+
+    .discover-main {
+        padding: 3rem 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    /* Assign grid areas to cards */
+    .attraction-card:nth-child(1) { grid-area: card1; }
+    .attraction-card:nth-child(2) { grid-area: card2; }
+    .attraction-card:nth-child(3) { grid-area: card3; }
+    .attraction-card:nth-child(4) { grid-area: card4; }
+    .attraction-card:nth-child(5) { grid-area: card5; }
+    .attraction-card:nth-child(6) { grid-area: card6; }
+    .attraction-card:nth-child(7) { grid-area: card7; }
+    .attraction-card:nth-child(8) { grid-area: card8; }
+
+    /* Enhanced hover effects for desktop */
+    .attraction-card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .attraction-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, var(--primary-color), transparent);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+
+    .attraction-card:hover::before {
+        opacity: 0.1;
+    }
+
+    .card-content {
+        position: relative;
+        z-index: 2;
+    }
+}
