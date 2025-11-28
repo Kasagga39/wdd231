@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://kasagga39.github.io/wdd231/chamber/images/social-preview.png">
     <meta property="og:url" content="https://kasagga39.github.io/wdd231/chamber/directory.html">
     <meta property="og:description" content="Discover local businesses and connect with your community. Our directory helps you find trusted services while supporting neighborhood entrepreneurs.">
-    <script src="scripts/discover.js" type="module" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
                 </a>
                 <div class="logo-text">
                     <h1>Your City</h1>
-                    <p>Chamber of Commerce</p>
+                    <p> Anka Chamber of Commerce</p>
                 </div>
             </div>
             <nav>
@@ -49,8 +49,9 @@
 
     <main class="discover-main">
         <section class="visitor-info">
+            <h2 class="visually-hidden">Visit Information</h2>
             <div class="visitor-message">
-                <span id="close-message" aria-label="Close message">×</span>
+                <button id="close-message" aria-label="Close message">×</button>
                 <p id="visit-message"></p>
             </div>
         </section>
@@ -95,25 +96,23 @@
     </main>
 
     <footer>
-        <!-- In the head section -->
-        <script src="scripts/discover.js" type="module" defer></script>
         <div class="footer-container">
             <div class="footer-info">
                 <div class="footer-logo">
-                    <img src="images/logo.webp" alt="Chamber of Commerce Logo" width="60" height="60">
+                    <img src="images/logochember.png" alt="Chamber of Commerce Logo" width="60" height="60">
                     <div>
-                        <h3>Your City Chamber of Commerce</h3>
+                        <h3>Anka Chamber of Commerce</h3>
                         <p>123 Main Street, Your City, ST 12345</p>
                     </div>
                 </div>
                 <div class="contact-info">
-                    <p>info@yourcitychamber.org</p>
+                    <p>info@ankachamber.org</p>
                     <p>(555) 123-4567</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; <span id="current-year"></span> Your City Chamber of Commerce</p>
-                <p>WDD 230 Project</p>
+                <p>WDD 231 Project</p>
                 <p>Last Modified: <span id="last-modified"></span></p>
             </div>
         </div>

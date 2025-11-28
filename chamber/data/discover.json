@@ -4,7 +4,8 @@
         "name": "City Park & Botanical Gardens",
         "address": "1500 Park Avenue, Your City",
         "description": "A beautiful 50-acre park featuring themed gardens, walking trails, and seasonal flower displays. Perfect for family picnics and outdoor activities.",
-        "image": "images/attractions/park-gardens.webp"
+        "image": "../chamber/images/brightwave.png"
+    
     },
     {
         "id": 2,
