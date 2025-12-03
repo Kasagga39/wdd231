@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Browse our complete range of solar energy products, inverters, batteries, and electronic components at MJ Electronics & Energies.">
+    <title>MJ Electronics & Energies | Products - Solar Systems & Electronics</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <!-- Same head content as index.html -->
+</head>
+<body>
+    <!-- Same header as index.html -->
+      <header role="banner">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/mjelectronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
+                <h1>MJ Electronics & Energies</h1>
+            </div>
+            
+            <nav role="navigation" aria-label="Main navigation">
+                <button class="hamburger" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                
+                <ul class="nav-menu" id="mainNav">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Our Products</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <section class="products-header" aria-labelledby="products-heading">
+            <h1 id="products-heading">Our Products</h1>
+            <p>Browse our complete range of sustainable energy solutions</p>
+            
+            <div class="filter-controls">
+                <label for="categoryFilter">Filter by Category:</label>
+                <select id="categoryFilter">
+                    <option value="all">All Products</option>
+                    <option value="solar">Solar Systems</option>
+                    <option value="inverter">Inverters</option>
+                    <option value="battery">Batteries</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+                
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy">
+                    <option value="name">Name (A-Z)</option>
+                    <option value="price-low">Price (Low to High)</option>
+                    <option value="price-high">Price (High to Low)</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="all-products" aria-label="Product listing">
+            <div class="products-grid" id="allProducts">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section class="wishlist-section" aria-labelledby="wishlist-heading">
+            <h2 id="wishlist-heading">My Wishlist</h2>
+            <div class="wishlist-container" id="wishlistItems">
+                <!-- Wishlist items loaded from localStorage -->
+            </div>
+        </section>
+    </main>
+    
+    <!-- Same footer as index.html -->
+    <!-- Same modal as index.html -->
+    
+    <script src="scripts/main.js" type="module" defer></script>
+</body>
+</html>

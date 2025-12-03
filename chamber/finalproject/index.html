@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kasagga Frank">
+    <meta name="description" content="MJ Electronics & Energies - Leading provider of sustainable energy solutions and advanced electronic systems in Masaka, Uganda. Solar systems, inverters, batteries, and electronic components.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="MJ Electronics & Energies | Sustainable Power Solutions">
+    <meta property="og:description" content="Reliable solar energy systems and electronics in Masaka, Uganda.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    
+    <title>MJ Electronics & Energies | Home - Sustainable Power Solutions</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Share+Tech&display=swap" rel="stylesheet">
+    <script src="../finalproject/scripts/main.js" type="module" defer></script>
+    <script src="../finalproject/scripts/api.js" defer></script>
+    <script src="../finalproject/scripts/modal.js" defer></script>
+    <script src="../finalproject/scripts/utils.js" defer></script>
+    
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/mjelectronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
+                <h1>MJ Electronics & Energies</h1>
+            </div>
+            
+            <nav role="navigation" aria-label="Main navigation">
+                <button class="hamburger" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                
+                <ul class="nav-menu" id="mainNav">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Our Products</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h2 id="hero-heading">Powering Masaka with Sustainable Energy Solutions</h2>
+                <p>Reliable solar systems, inverters, batteries, and electronic components for homes and businesses.</p>
+                <a href="products.html" class="cta-button">View Our Products</a>
+            </div>
+        </section>
+
+        <section class="mission-vision" aria-labelledby="mission-heading">
+            <div class="mission">
+                <h3 id="mission-heading">Our Mission</h3>
+                <p>To empower Masaka and surrounding communities by delivering reliable, sustainable energy and electronics solutions that improve quality of life, boost productivity, and foster safety.</p>
+            </div>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>To be the leading provider of clean energy and intelligent electronic solutions in Central Uganda, known for quality, innovation, and social responsibility.</p>
+            </div>
+        </section>
+
+        <section class="featured-products" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured Products</h2>
+            <div class="products-container" id="featuredProducts">
+                <!-- Products will be dynamically loaded here -->
+                <div class="loading">Loading products...</div>
+            </div>
+        </section>
+
+        <section class="team-preview" aria-labelledby="team-heading">
+            <h2 id="team-heading">Meet Our Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="images/manager.jpg" alt="Joseph Mayanja - Manager" width="150" height="150" loading="lazy">
+                    <h3>Joseph Mayanja</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/frank.jpg" alt="Kasagga Frank - Assistant Manager" width="150" height="150" loading="lazy">
+                    <h3>Kasagga Frank</h3>
+                    <p>Assistant Manager</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> MJ Electronics & Energies – All rights reserved.</p>
+                <p>Masaka City, Uganda</p>
+                <p>Email: info@mjelectronics.co.ug</p>
+                <p>Phone: +256 772 123 456</p>
+            </div>
+            <div class="footer-links">
+                <p><a href="attributions.html">Attributions</a></p>
+                <p><a href="contact.html">Contact Form</a></p>
+                <p><a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- Modal Dialog -->
+    <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+</body>
+</html>

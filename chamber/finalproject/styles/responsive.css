@@ -1,0 +1,125 @@
+/* Mobile First Responsive Design */
+
+/* Mobile (320px and up) */
+@media (max-width: 767px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--primary-color);
+        padding: 1rem;
+        box-shadow: var(--shadow);
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+    }
+    
+    .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .mission-vision {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+    
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 1rem;
+    }
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .header-container {
+        padding: 0 1rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    .products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .nav-menu {
+        display: flex !important;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 2rem;
+    }
+    
+    .modal-content {
+        max-height: 90vh;
+    }
+}
+
+/* High Resolution Displays */
+@media (min-resolution: 192dpi) {
+    .logo-container img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

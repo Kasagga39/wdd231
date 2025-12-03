@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "name": "Solar Home System 300W",
+        "category": "solar",
+        "price": 450000,
+        "description": "Complete 300W solar system for basic home lighting and charging",
+        "image": "images/solar-300w.jpg",
+        "warranty": "2 years",
+        "power": "300W",
+        "components": ["Solar Panel", "Controller", "Battery", "Wiring"]
+    },
+    {
+        "id": 2,
+        "name": "Pure Sine Wave Inverter 2000VA",
+        "category": "inverter",
+        "price": 750000,
+        "description": "High-efficiency pure sine wave inverter for sensitive electronics",
+        "image": "images/inverter-2000va.jpg",
+        "warranty": "18 months",
+        "capacity": "2000VA",
+        "efficiency": "90%"
+    },
+    {
+        "id": 3,
+        "name": "Deep Cycle Battery 100AH",
+        "category": "battery",
+        "price": 350000,
+        "description": "Maintenance-free deep cycle battery for solar systems",
+        "image": "images/battery-100ah.jpg",
+        "warranty": "1 year",
+        "capacity": "100AH",
+        "type": "AGM"
+    },
+    {
+        "id": 4,
+        "name": "Solar Street Light 60W",
+        "category": "solar",
+        "price": 180000,
+        "description": "Automatic solar-powered street light with motion sensor",
+        "image": "images/street-light.jpg",
+        "warranty": "1 year",
+        "power": "60W",
+        "runtime": "12 hours"
+    },
+    {
+        "id": 5,
+        "name": "Hybrid Inverter 3000VA",
+        "category": "inverter",
+        "price": 1200000,
+        "description": "Grid-tie hybrid inverter with solar input",
+        "image": "images/hybrid-inverter.jpg",
+        "warranty": "2 years",
+        "capacity": "3000VA",
+        "solarInput": "Yes"
+    },
+    {
+        "id": 6,
+        "name": "Tubular Battery 150AH",
+        "category": "battery",
+        "price": 550000,
+        "description": "Heavy-duty tubular battery for backup systems",
+        "image": "images/tubular-battery.jpg",
+        "warranty": "2 years",
+        "capacity": "150AH",
+        "life": "5 years"
+    },
+    {
+        "id": 7,
+        "name": "Solar Panel 200W Mono",
+        "category": "solar",
+        "price": 250000,
+        "description": "High-efficiency monocrystalline solar panel",
+        "image": "images/solar-panel.jpg",
+        "warranty": "25 years",
+        "power": "200W",
+        "type": "Monocrystalline"
+    },
+    {
+        "id": 8,
+        "name": "MPPT Charge Controller 40A",
+        "category": "accessories",
+        "price": 180000,
+        "description": "Maximum Power Point Tracking charge controller",
+        "image": "images/mppt-controller.jpg",
+        "warranty": "1 year",
+        "current": "40A",
+        "efficiency": "98%"
+    },
+    {
+        "id": 9,
+        "name": "Solar Water Heater 100L",
+        "category": "solar",
+        "price": 850000,
+        "description": "Thermosiphon solar water heating system",
+        "image": "images/water-heater.jpg",
+        "warranty": "5 years",
+        "capacity": "100 liters",
+        "type": "Thermosiphon"
+    },
+    {
+        "id": 10,
+        "name": "Online UPS 1500VA",
+        "category": "inverter",
+        "price": 950000,
+        "description": "Double conversion online UPS for critical loads",
+        "image": "images/online-ups.jpg",
+        "warranty": "2 years",
+        "capacity": "1500VA",
+        "transfer": "0ms"
+    },
+    {
+        "id": 11,
+        "name": "Solar DC Fan 12V",
+        "category": "accessories",
+        "price": 45000,
+        "description": "Energy-efficient DC fan for solar systems",
+        "image": "images/solar-fan.jpg",
+        "warranty": "6 months",
+        "power": "12W",
+        "voltage": "12V DC"
+    },
+    {
+        "id": 12,
+        "name": "Battery Charger 10A",
+        "category": "accessories",
+        "price": 75000,
+        "description": "Automatic battery charger with float mode",
+        "image": "images/battery-charger.jpg",
+        "warranty": "6 months",
+        "current": "10A",
+        "type": "SMART"
+    },
+    {
+        "id": 13,
+        "name": "Solar CCTV System",
+        "category": "solar",
+        "price": 650000,
+        "description": "Complete solar-powered CCTV surveillance system",
+        "image": "images/solar-cctv.jpg",
+        "warranty": "1 year",
+        "cameras": "4 cameras",
+        "storage": "1TB"
+    },
+    {
+        "id": 14,
+        "name": "Power Inverter 500VA",
+        "category": "inverter",
+        "price": 250000,
+        "description": "Compact inverter for basic home backup",
+        "image": "images/inverter-500va.jpg",
+        "warranty": "1 year",
+        "capacity": "500VA",
+        "type": "Modified Sine"
+    },
+    {
+        "id": 15,
+        "name": "Solar LED Bulbs Pack",
+        "category": "accessories",
+        "price": 35000,
+        "description": "Pack of 5 energy-saving LED bulbs",
+        "image": "images/led-bulbs.jpg",
+        "warranty": "6 months",
+        "quantity": "5 pieces",
+        "wattage": "9W each"
+    }
+]
