@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | MJ Electronics</title>
-    <link rel="stylesheet" href="styles/responsive.css">
+    <title>Contact Us | MJ Electronics & Energies</title>
     <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
-    <header>
-        <!-- Your regular header here -->
-        <h1>MJ Electronics & Energies</h1>
-        <nav>
-            <!-- Your navigation here -->
-              <header role="banner">
+    <!-- Header Section -->
+    <header role="banner">
         <div class="header-container">
             <div class="logo-container">
-                <img src="../finalproject/images/mj-electronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
+                <img src="images/mj-electronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
                 <h1>MJ Electronics & Energies</h1>
             </div>
             
@@ -28,20 +24,18 @@
                 </button>
                 
                 <ul class="nav-menu" id="mainNav">
-                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="products.html" class="nav-link">Our Products</a></li>
                     <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="contact.html" class="nav-link active" aria-current="page">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-        </nav>
-    </header>
     
-    <main>
-        <section class="contact-form-section">
-            <h2>Send Us a Message</h2>
+    <main id="main-content" role="main">
+        <section class="contact-form-section" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Send Us a Message</h2>
             
             <form id="contactForm" novalidate>
                 <fieldset>
@@ -52,7 +46,7 @@
                         <input type="text" id="name" name="name" required 
                                placeholder="Enter your full name"
                                aria-required="true">
-                        <span class="error-message" id="nameError"></span>
+                        <span class="error-message" id="nameError" aria-live="polite"></span>
                     </div>
                     
                     <div class="form-group">
@@ -60,13 +54,15 @@
                         <input type="email" id="email" name="email" required
                                placeholder="you@example.com"
                                aria-required="true">
-                        <span class="error-message" id="emailError"></span>
+                        <span class="error-message" id="emailError" aria-live="polite"></span>
                     </div>
                     
                     <div class="form-group">
                         <label for="phone">Phone Number:</label>
                         <input type="tel" id="phone" name="phone"
-                               placeholder="+256 XXX XXX XXX">
+                               placeholder="+256 XXX XXX XXX"
+                               pattern="[+]?[\d\s\-\(\)]+"
+                               title="Enter a valid phone number">
                     </div>
                 </fieldset>
                 
@@ -83,7 +79,7 @@
                             <option value="general">General Question</option>
                             <option value="other">Other</option>
                         </select>
-                        <span class="error-message" id="subjectError"></span>
+                        <span class="error-message" id="subjectError" aria-live="polite"></span>
                     </div>
                     
                     <div class="form-group">
@@ -102,7 +98,7 @@
                         <textarea id="message" name="message" rows="5" required
                                   placeholder="Please describe your inquiry in detail..."
                                   aria-required="true"></textarea>
-                        <span class="error-message" id="messageError"></span>
+                        <span class="error-message" id="messageError" aria-live="polite"></span>
                     </div>
                     
                     <div class="form-group">
@@ -121,8 +117,21 @@
         </section>
     </main>
     
-    <footer>
-        <!-- Your footer here -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> MJ Electronics & Energies – All rights reserved.</p>
+                <p>Masaka City, Uganda</p>
+                <p>Email: info@mjelectronics.co.ug</p>
+                <p>Phone: +256 772 123 456</p>
+            </div>
+            <div class="footer-links">
+                <p><a href="attributions.html">Attributions</a></p>
+                <p><a href="contact.html">Contact Form</a></p>
+                <p><a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+        <p id="lastModified"></p>
     </footer>
     
     <script src="scripts/form-action.js" type="module"></script>

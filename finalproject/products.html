@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Your Name">
     <meta name="description" content="Browse our complete range of solar energy products, inverters, batteries, and electronic components at MJ Electronics & Energies.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="MJ Electronics & Energies | Products - Solar Systems & Electronics">
+    <meta property="og:description" content="Browse our complete range of sustainable energy solutions">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    
     <title>MJ Electronics & Energies | Products - Solar Systems & Electronics</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
     <!-- CSS Links -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/final.css"> <!-- Main styles -->
-    <link rel="stylesheet" href="styles/products.css"> <!-- Products specific styles -->
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/products.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/products.js" type="module" defer></script>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +35,8 @@
     <header role="banner">
         <div class="header-container">
             <div class="logo-container">
-                <img src="../finalproject/images/mj-electronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
+                <!-- FIXED: Consistent image path -->
+                <img src="images/mj-electronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
                 <h1>MJ Electronics & Energies</h1>
             </div>
             
@@ -45,14 +57,14 @@
         </div>
     </header>
     
-    <main id="main-content">
+    <main id="main-content" role="main">
         <section class="products-header" aria-labelledby="products-heading">
             <h1 id="products-heading">Our Products</h1>
             <p>Browse our complete range of sustainable energy solutions</p>
             
             <div class="filter-controls">
                 <label for="categoryFilter">Filter by Category:</label>
-                <select id="categoryFilter">
+                <select id="categoryFilter" aria-label="Filter products by category">
                     <option value="all">All Products</option>
                     <option value="solar">☀️ Solar Systems</option>
                     <option value="inverter">⚡ Inverters</option>
@@ -61,7 +73,7 @@
                 </select>
                 
                 <label for="sortBy">Sort by:</label>
-                <select id="sortBy">
+                <select id="sortBy" aria-label="Sort products">
                     <option value="name">Name (A-Z)</option>
                     <option value="price-low">Price (Low to High)</option>
                     <option value="price-high">Price (High to Low)</option>
@@ -71,7 +83,7 @@
 
         <section class="all-products" aria-label="Product listing">
             <div class="products-grid" id="allProducts">
-                <div class="loading">
+                <div class="loading" aria-live="polite">
                     <p>Loading products...</p>
                 </div>
             </div>
@@ -80,7 +92,7 @@
         <section class="wishlist-section" aria-labelledby="wishlist-heading">
             <h2 id="wishlist-heading">My Wishlist</h2>
             <div class="wishlist-container" id="wishlistItems">
-                <div class="empty-wishlist">
+                <div class="empty-wishlist" aria-live="polite">
                     <p>Your wishlist is empty.</p>
                     <p>Browse products and click the ♡ icon to add items.</p>
                 </div>
@@ -97,7 +109,7 @@
     </div>
     
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">  <!-- ADDED: Accessibility role -->
         <div class="footer-content">
             <div class="footer-info">
                 <p>&copy; <span id="currentYear"></span> MJ Electronics & Energies – All rights reserved.</p>
@@ -115,7 +127,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="scripts/products.js" type="module" defer></script>
     <script src="scripts/main.js" type="module" defer></script>
 </body>
 </html>

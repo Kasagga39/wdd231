@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Same head as index.html -->
-    <title>MJ Electronics & Energies | Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kasagga Frank">
     <meta name="description" content="Contact MJ Electronics & Energies for inquiries about solar systems, inverters, batteries, and electronic components in Masaka, Uganda.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="MJ Electronics & Energies | Contact Us">
+    <meta property="og:description" content="Get in touch for inquiries, quotes, or technical support">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    
+    <title>MJ Electronics & Energies | Contact Us</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/final.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Share+Tech&display=swap" rel="stylesheet">
+    
+    <!-- JavaScript -->
+    <script src="scripts/contact.js" type="module" defer></script>
 </head>
 <body>
-    <!-- Same header as index.html -->
-      <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <header role="banner">
         <div class="header-container">
             <div class="logo-container">
-                <img src="../finalproject/images/mj-electronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
+                <!-- FIXED: Consistent image path -->
+                <img src="images/mj-electronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
                 <h1>MJ Electronics & Energies</h1>
             </div>
             
@@ -25,16 +48,17 @@
                 </button>
                 
                 <ul class="nav-menu" id="mainNav">
-                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <!-- FIXED: Correct active link -->
+                    <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="products.html" class="nav-link">Our Products</a></li>
                     <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="contact.html" class="nav-link active" aria-current="page">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <main id="main-content">
+    <main id="main-content" role="main">
         <section class="contact-hero" aria-labelledby="contact-heading">
             <h1 id="contact-heading">Contact Us</h1>
             <p>Get in touch for inquiries, quotes, or technical support</p>
@@ -44,22 +68,22 @@
             <h2 id="info-heading">Our Location & Contact</h2>
             <div class="info-grid">
                 <div class="info-card">
-                    <h3>Address</h3>
+                    <h3>📍 Address</h3>
                     <p>Plot 123, Masaka Road</p>
                     <p>Masaka City, Uganda</p>
                 </div>
                 <div class="info-card">
-                    <h3>Phone</h3>
+                    <h3>📞 Phone</h3>
                     <p>+256 772 123 456</p>
                     <p>+256 752 987 654</p>
                 </div>
                 <div class="info-card">
-                    <h3>Email</h3>
+                    <h3>📧 Email</h3>
                     <p>info@mjelectronics.co.ug</p>
                     <p>sales@mjelectronics.co.ug</p>
                 </div>
                 <div class="info-card">
-                    <h3>Hours</h3>
+                    <h3>🕒 Hours</h3>
                     <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
                     <p>Saturday: 9:00 AM - 4:00 PM</p>
                 </div>
@@ -69,7 +93,8 @@
         <section class="contact-form-section" aria-labelledby="form-heading">
             <h2 id="form-heading">Send Us a Message</h2>
             
-            <form id="contactForm" action="form-action.html" method="get" novalidate>
+            <!-- CHANGED: Form now submits to same page (common practice) or you can use a form handler -->
+            <form id="contactForm" method="post" novalidate>
                 <fieldset>
                     <legend>Contact Information</legend>
                     
@@ -78,7 +103,7 @@
                         <input type="text" id="name" name="name" required 
                                placeholder="Enter your full name"
                                aria-required="true">
-                        <span class="error-message" id="nameError"></span>
+                        <span class="error-message" id="nameError" aria-live="polite"></span>
                     </div>
                     
                     <div class="form-group">
@@ -86,13 +111,15 @@
                         <input type="email" id="email" name="email" required
                                placeholder="you@example.com"
                                aria-required="true">
-                        <span class="error-message" id="emailError"></span>
+                        <span class="error-message" id="emailError" aria-live="polite"></span>
                     </div>
                     
                     <div class="form-group">
                         <label for="phone">Phone Number:</label>
                         <input type="tel" id="phone" name="phone"
-                               placeholder="+256 XXX XXX XXX">
+                               placeholder="+256 XXX XXX XXX"
+                               pattern="^\+256\s?\d{3}\s?\d{3}\s?\d{3}$"
+                               title="Format: +256 XXX XXX XXX">
                     </div>
                 </fieldset>
                 
@@ -109,7 +136,7 @@
                             <option value="general">General Question</option>
                             <option value="other">Other</option>
                         </select>
-                        <span class="error-message" id="subjectError"></span>
+                        <span class="error-message" id="subjectError" aria-live="polite"></span>
                     </div>
                     
                     <div class="form-group">
@@ -128,7 +155,7 @@
                         <textarea id="message" name="message" rows="5" required
                                   placeholder="Please describe your inquiry in detail..."
                                   aria-required="true"></textarea>
-                        <span class="error-message" id="messageError"></span>
+                        <span class="error-message" id="messageError" aria-live="polite"></span>
                     </div>
                     
                     <div class="form-group">
@@ -149,14 +176,32 @@
         <section class="map-section" aria-labelledby="map-heading">
             <h2 id="map-heading">Find Us</h2>
             <div class="map-placeholder">
-                <p>Map location would be displayed here</p>
-                <p>Coordinates: 0.3353° S, 31.7344° E</p>
+                <!-- Consider adding a real Google Maps embed -->
+                <div class="map-container">
+                    <p>📍 Map location would be displayed here</p>
+                    <p>Coordinates: 0.3353° S, 31.7344° E</p>
+                    <p><small>Masaka City, Central Region, Uganda</small></p>
+                </div>
             </div>
         </section>
     </main>
     
-    <!-- Same footer as index.html -->
-    
-    <script src="scripts/form-validation.js" type="module"></script>
+    <!-- ADDED: Complete footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> MJ Electronics & Energies – All rights reserved.</p>
+                <p>Masaka City, Uganda</p>
+                <p>Email: info@mjelectronics.co.ug</p>
+                <p>Phone: +256 772 123 456</p>
+            </div>
+            <div class="footer-links">
+                <p><a href="attributions.html">Attributions</a></p>
+                <p><a href="contact.html">Contact Form</a></p>
+                <p><a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
