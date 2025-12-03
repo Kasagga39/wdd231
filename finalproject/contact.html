@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+    <title>MJ Electronics & Energies | Contact Us</title>
+    <meta name="description" content="Contact MJ Electronics & Energies for inquiries about solar systems, inverters, batteries, and electronic components in Masaka, Uganda.">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <!-- Same header as index.html -->
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/mjelectronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
+                <h1>MJ Electronics & Energies</h1>
+            </div>
+            
+            <nav role="navigation" aria-label="Main navigation">
+                <button class="hamburger" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                
+                <ul class="nav-menu" id="mainNav">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Our Products</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <section class="contact-hero" aria-labelledby="contact-heading">
+            <h1 id="contact-heading">Contact Us</h1>
+            <p>Get in touch for inquiries, quotes, or technical support</p>
+        </section>
+
+        <section class="contact-info" aria-labelledby="info-heading">
+            <h2 id="info-heading">Our Location & Contact</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Address</h3>
+                    <p>Plot 123, Masaka Road</p>
+                    <p>Masaka City, Uganda</p>
+                </div>
+                <div class="info-card">
+                    <h3>Phone</h3>
+                    <p>+256 772 123 456</p>
+                    <p>+256 752 987 654</p>
+                </div>
+                <div class="info-card">
+                    <h3>Email</h3>
+                    <p>info@mjelectronics.co.ug</p>
+                    <p>sales@mjelectronics.co.ug</p>
+                </div>
+                <div class="info-card">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section" aria-labelledby="form-heading">
+            <h2 id="form-heading">Send Us a Message</h2>
+            
+            <form id="contactForm" action="form-action.html" method="get" novalidate>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name: *</label>
+                        <input type="text" id="name" name="name" required 
+                               placeholder="Enter your full name"
+                               aria-required="true">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address: *</label>
+                        <input type="email" id="email" name="email" required
+                               placeholder="you@example.com"
+                               aria-required="true">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone"
+                               placeholder="+256 XXX XXX XXX">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Your Inquiry</legend>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject: *</label>
+                        <select id="subject" name="subject" required aria-required="true">
+                            <option value="">Select a subject</option>
+                            <option value="quote">Request Quote</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="product">Product Inquiry</option>
+                            <option value="general">General Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Product Category:</label>
+                        <select id="category" name="category">
+                            <option value="">Any Category</option>
+                            <option value="solar">Solar Systems</option>
+                            <option value="inverter">Inverters</option>
+                            <option value="battery">Batteries</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message: *</label>
+                        <textarea id="message" name="message" rows="5" required
+                                  placeholder="Please describe your inquiry in detail..."
+                                  aria-required="true"></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Subscribe to our newsletter for updates and promotions
+                        </label>
+                    </div>
+                </fieldset>
+                
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="reset" class="reset-btn">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="map-section" aria-labelledby="map-heading">
+            <h2 id="map-heading">Find Us</h2>
+            <div class="map-placeholder">
+                <p>Map location would be displayed here</p>
+                <p>Coordinates: 0.3353° S, 31.7344° E</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Same footer as index.html -->
+    
+    <script src="scripts/form-validation.js" type="module"></script>
+</body>
+</html>
