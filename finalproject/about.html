@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="styles/about.css"> 
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph Meta -->
     <meta property="og:title" content="About MJ Electronics – Innovation, Quality, and Trusted Service">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://kasagga39.github.io/wdd231/finalproject/images/social-preview.png">
@@ -24,10 +26,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Share+Tech&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
-    <!-- Header (exact same as your other pages) -->
+    <!-- Header -->
     <header role="banner">
         <div class="header-container">
             <div class="logo-container">
@@ -51,15 +54,17 @@
             </nav>
         </div>
     </header>
-    
+
+    <!-- Main Content -->
     <main id="main-content">
-        <!-- About Hero Section -->
+
+        <!-- Hero Section -->
         <section class="about-hero" aria-labelledby="about-heading">
             <h1 id="about-heading">About MJ Electronics & Energies</h1>
             <p>Empowering communities through sustainable technology since 2015</p>
         </section>
 
-        <!-- Achievement Stats -->
+        <!-- Stats Section -->
         <div class="achievement-stats">
             <div class="stat-card">
                 <div class="stat-number">8+</div>
@@ -87,6 +92,7 @@
                     <p>Founded in 2015, MJ Electronics & Energies began as a small electronics repair shop in Masaka City. What started as a humble venture with a single workbench has grown into a leading provider of sustainable energy solutions in Central Uganda.</p>
                     <p>Our founder, Joseph Mayanja, recognized the critical need for reliable power in a region plagued by frequent electricity outages. This insight sparked our transformation from a repair shop to a comprehensive energy solutions provider.</p>
                 </div>
+
                 <div class="history-timeline">
                     <div class="timeline-item">
                         <div class="timeline-year">2015</div>
@@ -108,7 +114,7 @@
             </div>
         </section>
 
-        <!-- Quote Section -->
+        <!-- Quote -->
         <section class="quote-section">
             <blockquote>
                 "Our mission is not just to sell products, but to empower communities with sustainable energy solutions that transform lives and businesses."
@@ -116,46 +122,37 @@
             <p class="quote-author">— Joseph Mayanja, Founder & CEO</p>
         </section>
 
-        <!-- Values Section -->
+        <!-- Values -->
         <section class="values" aria-labelledby="values-heading">
             <h2 id="values-heading">Our Core Values</h2>
+
             <div class="values-grid">
                 <div class="value-card">
                     <h3>Quality Excellence</h3>
-                    <p>We source only the highest quality components and ensure rigorous testing of all our installations. Every product meets international standards.</p>
-                    <div class="value-progress">
-                        <div class="value-progress-bar"></div>
-                    </div>
+                    <p>We source only the highest quality components and ensure rigorous testing of all our installations.</p>
                 </div>
+
                 <div class="value-card">
                     <h3>Innovation Driven</h3>
-                    <p>We stay at the forefront of renewable energy technology to provide the most efficient and cost-effective solutions for our customers.</p>
-                    <div class="value-progress">
-                        <div class="value-progress-bar"></div>
-                    </div>
+                    <p>We stay at the forefront of renewable energy technology, offering efficient and modern solutions.</p>
                 </div>
+
                 <div class="value-card">
                     <h3>Community Focus</h3>
-                    <p>We're committed to improving life in Masaka through accessible, affordable energy solutions that create jobs and opportunities.</p>
-                    <div class="value-progress">
-                        <div class="value-progress-bar"></div>
-                    </div>
+                    <p>We are dedicated to improving life in Masaka through accessible, affordable energy solutions.</p>
                 </div>
+
                 <div class="value-card">
                     <h3>Sustainability First</h3>
-                    <p>Every solution we provide is designed with long-term environmental impact in mind, promoting clean energy adoption.</p>
-                    <div class="value-progress">
-                        <div class="value-progress-bar"></div>
-                    </div>
+                    <p>All our solutions prioritize long-term environmental benefit and clean energy adoption.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Team Section -->
+        <!-- Team -->
         <section class="team-full" aria-labelledby="team-heading">
             <h2 id="team-heading">Meet Our Leadership Team</h2>
             <div class="team-grid" id="teamMembers">
-                <!-- Team members will be loaded dynamically -->
                 <div class="team-loading">
                     <div class="loading-spinner"></div>
                     <p>Loading team members...</p>
@@ -163,7 +160,7 @@
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- Services -->
         <section class="services" aria-labelledby="services-heading">
             <h2 id="services-heading">Our Comprehensive Services</h2>
             <ul class="services-list">
@@ -171,11 +168,11 @@
                 <li>Inverter & Battery Sales & Service</li>
                 <li>Energy Audits & Consultations</li>
                 <li>Electronic Components Supply</li>
-                <li>24/7 Technical Support & Emergency Service</li>
+                <li>24/7 Technical Support</li>
             </ul>
         </section>
 
-        <!-- Company Milestones -->
+        <!-- Milestones -->
         <div class="milestones">
             <div class="milestone">
                 <div class="milestone-year">2015</div>
@@ -194,9 +191,10 @@
                 <div class="milestone-text">Institutional Clients</div>
             </div>
         </div>
+
     </main>
-    
-    <!-- Footer (exact same as your other pages) -->
+
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-info">
@@ -205,6 +203,7 @@
                 <p>Email: info@mjelectronics.co.ug</p>
                 <p>Phone: +256 772 123 456</p>
             </div>
+
             <div class="footer-links">
                 <p><a href="attributions.html">Attributions</a></p>
                 <p><a href="contact.html">Contact Form</a></p>
@@ -214,8 +213,9 @@
         <p id="lastModified"></p>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script src="scripts/team-loader.js" type="module" defer></script>
     <script src="scripts/main.js" type="module" defer></script>
+
 </body>
 </html>
