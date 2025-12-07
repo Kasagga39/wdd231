@@ -21,7 +21,7 @@
     <meta property="og:url" content="https://kasagga39.github.io/wdd231/finalproject/about.html">
     <meta property="og:description" content="Learn about MJ Electronics, our mission, values, and commitment to providing reliable, top-quality electronic products and exceptional customer service.">
     
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Share+Tech&display=swap" rel="stylesheet">
@@ -34,7 +34,8 @@
     <header role="banner">
         <div class="header-container">
             <div class="logo-container">
-                <img src="../finalproject/images/mj-electronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
+                <!-- FIXED: Correct image path -->
+                <img src="images/mj-electronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
                 <h1>MJ Electronics & Energies</h1>
             </div>
             
@@ -56,7 +57,7 @@
     </header>
 
     <!-- Main Content -->
-    <main id="main-content">
+    <main id="main-content" role="main">
 
         <!-- Hero Section -->
         <section class="about-hero" aria-labelledby="about-heading">
@@ -195,7 +196,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-info">
                 <p>&copy; <span id="currentYear"></span> MJ Electronics & Energies – All rights reserved.</p>
