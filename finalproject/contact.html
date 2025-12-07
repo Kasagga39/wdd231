@@ -7,7 +7,7 @@
     <meta name="description" content="Contact MJ Electronics & Energies for inquiries about solar systems, inverters, batteries, and electronic components in Masaka, Uganda.">
     
     <!-- Open Graph Tags -->
-   <meta property="og:title" content="MJ Electronics – Contact Us">
+    <meta property="og:title" content="MJ Electronics – Contact Us">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://kasagga39.github.io/wdd231/finalproject/images/social-preview.png">
     <meta property="og:url" content="https://kasagga39.github.io/wdd231/finalproject/contact.html">
@@ -22,17 +22,14 @@
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/responsive.css">
     
-    <!-- Fonts -->
-     <!-- Add this to contact.html head section -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Share+Tech&display=swap" rel="stylesheet">
+    <!-- Google Fonts - SINGLE SET (no duplicates) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Share+Tech&display=swap" rel="stylesheet">
     
     <!-- JavaScript -->
     <script src="scripts/contact.js" type="module" defer></script>
+    <script src="scripts/main.js" type="module" defer></script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -40,7 +37,6 @@
     <header role="banner">
         <div class="header-container">
             <div class="logo-container">
-                <!-- FIXED: Consistent image path -->
                 <img src="images/mj-electronics.png" alt="MJ Electronics & Energies Logo" width="60" height="60" loading="lazy">
                 <h1>MJ Electronics & Energies</h1>
             </div>
@@ -53,7 +49,6 @@
                 </button>
                 
                 <ul class="nav-menu" id="mainNav">
-                    <!-- FIXED: Correct active link -->
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="products.html" class="nav-link">Our Products</a></li>
                     <li><a href="about.html" class="nav-link">About Us</a></li>
@@ -98,7 +93,6 @@
         <section class="contact-form-section" aria-labelledby="form-heading">
             <h2 id="form-heading">Send Us a Message</h2>
             
-            <!-- CHANGED: Form now submits to same page (common practice) or you can use a form handler -->
             <form id="contactForm" method="post" novalidate>
                 <fieldset>
                     <legend>Contact Information</legend>
@@ -181,7 +175,6 @@
         <section class="map-section" aria-labelledby="map-heading">
             <h2 id="map-heading">Find Us</h2>
             <div class="map-placeholder">
-                <!-- Consider adding a real Google Maps embed -->
                 <div class="map-container">
                     <p>📍 Map location would be displayed here</p>
                     <p>Coordinates: 0.3353° S, 31.7344° E</p>
@@ -191,7 +184,6 @@
         </section>
     </main>
     
-    <!-- ADDED: Complete footer -->
     <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-info">
