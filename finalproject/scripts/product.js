@@ -2,7 +2,7 @@
 // PRODUCTS PAGE MODULE - MJ Electronics
 // ============================================
 
-// Import functions from other modules (you'll need to create these)
+// Import functions from other modules
 import { formatCurrency, initLazyLoading } from './utils.js';
 import { showModal } from './modal.js';
 
@@ -473,25 +473,38 @@ function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.textContent = message;
-    notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        padding: 1rem 1.5rem;
-        background: ${type === 'error' ? '#f8d7da' : type === 'success' ? '#d4edda' : '#d1ecf1'};
-        color: ${type === 'error' ? '#721c24' : type === 'success' ? '#155724' : '#0c5460'};
-        border: 1px solid ${type === 'error' ? '#f5c6cb' : type === 'success' ? '#c3e6cb' : '#bee5eb'};
-        border-radius: 4px;
-        z-index: 1000;
-        animation: slideIn 0.3s ease;
-    `;
+    
+    // Use inline styles instead of creating a style tag
+    notification.style.position = 'fixed';
+    notification.style.top = '20px';
+    notification.style.right = '20px';
+    notification.style.padding = '1rem 1.5rem';
+    notification.style.backgroundColor = type === 'error' ? '#f8d7da' : type === 'success' ? '#d4edda' : '#d1ecf1';
+    notification.style.color = type === 'error' ? '#721c24' : type === 'success' ? '#155724' : '#0c5460';
+    notification.style.border = `1px solid ${type === 'error' ? '#f5c6cb' : type === 'success' ? '#c3e6cb' : '#bee5eb'}`;
+    notification.style.borderRadius = '4px';
+    notification.style.zIndex = '1000';
+    notification.style.opacity = '0';
+    notification.style.transform = 'translateX(100%)';
+    notification.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
     
     document.body.appendChild(notification);
     
+    // Trigger animation
+    setTimeout(() => {
+        notification.style.opacity = '1';
+        notification.style.transform = 'translateX(0)';
+    }, 10);
+    
     // Remove after 3 seconds
     setTimeout(() => {
-        notification.style.animation = 'slideOut 0.3s ease';
-        setTimeout(() => notification.remove(), 300);
+        notification.style.opacity = '0';
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            if (notification.parentNode) {
+                document.body.removeChild(notification);
+            }
+        }, 300);
     }, 3000);
 }
 
@@ -512,29 +525,3 @@ window.resetFilters = resetFilters;
 window.toggleWishlist = toggleWishlist;
 window.removeFromWishlist = removeFromWishlist;
 
-// Add CSS for notifications
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideIn {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes slideOut {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
